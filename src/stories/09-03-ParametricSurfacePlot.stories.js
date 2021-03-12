@@ -43,6 +43,9 @@ export const ParametricSurfacePlot = () => (
     graph={[
       {
         type: "ParametricSurfacePlot",
+        rotationOnDrag: {
+          rotateAroundXaxis: false,
+        },
         mark: {
           position: {
             x: {

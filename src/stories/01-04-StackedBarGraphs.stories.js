@@ -60,6 +60,9 @@ export const StackedBargraph = () => (
             depth: 20,
           },
         },
+        rotationOnDrag: {
+          rotateAroundXaxis: false,
+        },
         mark: {
           type: "box",
           position: {

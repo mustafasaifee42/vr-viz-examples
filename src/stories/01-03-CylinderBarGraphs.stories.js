@@ -52,6 +52,9 @@ export const BargraghWithCylinder = () => (
             ["height", "number"],
           ],
         },
+        rotationOnDrag: {
+          rotateAroundXaxis: false,
+        },
         style: {
           dimensions: {
             width: 20,

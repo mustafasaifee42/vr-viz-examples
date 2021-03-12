@@ -87,6 +87,9 @@ export const MeshPlot = () => (
             depth: 10,
           },
         },
+        rotationOnDrag: {
+          rotateAroundXaxis: false,
+        },
         mark: {
           type: "plane",
           position: {

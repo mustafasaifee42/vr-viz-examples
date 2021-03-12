@@ -14,7 +14,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
-    "vr-viz": "^3.0.7",
+    "vr-viz": "^3.0.8",
     "web-vitals": "^1.1.0"
   },
   "scripts": {

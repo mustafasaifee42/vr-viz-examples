@@ -55,6 +55,9 @@ export const Treemap = () => (
             height: 5,
           },
         },
+        rotationOnDrag: {
+          rotateAroundXaxis: false,
+        },
         mark: {
           type: "box",
           style: {

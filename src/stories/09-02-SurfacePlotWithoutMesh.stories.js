@@ -43,6 +43,9 @@ export const SurfacePlotWithoutMesh = () => (
     graph={[
       {
         type: "SurfacePlot",
+        rotationOnDrag: {
+          rotateAroundXaxis: false,
+        },
         mark: {
           type: "plane",
           position: {

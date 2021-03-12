@@ -43,6 +43,9 @@ export const CurvePlot = () => (
     graph={[
       {
         type: "ContourPlot",
+        rotationOnDrag: {
+          rotateAroundXaxis: false,
+        },
         mark: {
           type: "line",
           position: {

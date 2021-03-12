@@ -59,6 +59,9 @@ export const BargraghWithHover = () => (
             depth: 10,
           },
         },
+        rotationOnDrag: {
+          rotateAroundXaxis: false,
+        },
         mark: {
           type: "box",
           position: {

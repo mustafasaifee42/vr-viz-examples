@@ -59,6 +59,9 @@ export const BargraghWithCone = () => (
             depth: 10,
           },
         },
+        rotationOnDrag: {
+          rotateAroundXaxis: false,
+        },
         mark: {
           type: "cone",
           position: {

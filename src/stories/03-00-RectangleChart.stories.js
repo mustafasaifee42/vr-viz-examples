@@ -60,6 +60,9 @@ export const RectangleChart = () => (
             depth: 10,
           },
         },
+        rotationOnDrag: {
+          rotateAroundXaxis: false,
+        },
         mark: {
           position: {
             x: {

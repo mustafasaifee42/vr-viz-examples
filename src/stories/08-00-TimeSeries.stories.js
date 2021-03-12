@@ -53,6 +53,9 @@ export const TimeSeries = () => (
             ["emission", "number"],
           ],
         },
+        rotationOnDrag: {
+          rotateAroundXaxis: false,
+        },
         style: {
           dimensions: {
             width: 15,

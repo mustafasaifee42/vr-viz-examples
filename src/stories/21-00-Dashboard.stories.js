@@ -51,13 +51,16 @@ export const Dashboard = () => (
           ],
         },
         style: {
-          origin: [0, 0, 0],
+          origin: { x: 0, y: 0, z: 0 },
           rotation: "0 0 0",
           dimensions: {
             width: 10,
             height: 5,
             depth: 10,
           },
+        },
+        rotationOnDrag: {
+          rotateVisualization: false,
         },
         mark: {
           type: "cone",
@@ -133,12 +136,15 @@ export const Dashboard = () => (
       {
         type: "SurfacePlot",
         style: {
-          origin: [0, 6, 0],
+          origin: { x: 0, y: 6, z: 0 },
           dimensions: {
             width: 10,
             height: 5,
             depth: 10,
           },
+        },
+        rotationOnDrag: {
+          rotateVisualization: false,
         },
         mark: {
           position: {
@@ -213,12 +219,15 @@ export const Dashboard = () => (
       {
         type: "ScatterPlot",
         style: {
-          origin: [11, 0, 0],
+          origin: { x: 11, y: 0, z: 0 },
           dimensions: {
             width: 10,
             height: 11,
             depth: 10,
           },
+        },
+        rotationOnDrag: {
+          rotateVisualization: false,
         },
         data: {
           dataFile: "data/scatterPlot.csv",

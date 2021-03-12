@@ -60,6 +60,9 @@ export const LollipopGraph = () => (
             depth: 10,
           },
         },
+        rotationOnDrag: {
+          rotateAroundXaxis: false,
+        },
         mark: {
           type: "box",
           position: {

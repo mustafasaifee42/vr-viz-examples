@@ -43,6 +43,9 @@ export const SurfacePlotOnlyMesh = () => (
     graph={[
       {
         type: "SurfacePlot",
+        rotationOnDrag: {
+          rotateAroundXaxis: false,
+        },
         mark: {
           type: "plane",
           position: {

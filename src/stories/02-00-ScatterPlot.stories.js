@@ -54,6 +54,9 @@ export const ScatterPlot = () => (
             ["species", "text"],
           ],
         },
+        rotationOnDrag: {
+          rotateAroundXaxis: false,
+        },
         mark: {
           position: {
             x: {

@@ -54,6 +54,9 @@ export const ScatterPlotWithDroplines = () => (
             ["species", "text"],
           ],
         },
+        rotationOnDrag: {
+          rotateAroundXaxis: false,
+        },
         mark: {
           position: {
             x: {
