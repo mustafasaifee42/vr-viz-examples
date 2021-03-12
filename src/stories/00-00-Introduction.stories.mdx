@@ -1,0 +1,194 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Getting Started/Introduction" />
+
+<style>{`
+  .subheading {
+    --mediumdark: '#999999';
+    font-weight: 900;
+    font-size: 13px;
+    color: #999;
+    letter-spacing: 6px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 40px;
+  }
+
+  .link-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  @media (min-width: 620px) {
+    .link-list {
+      row-gap: 20px;
+      column-gap: 20px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media all and (-ms-high-contrast:none) {
+  .link-list {
+      display: -ms-grid;
+      -ms-grid-columns: 1fr 1fr;
+      -ms-grid-rows: 1fr 1fr;
+    }
+  }
+
+  .link-item {
+    display: block;
+    padding: 20px 30px 20px 15px;
+    border: 1px solid #00000010;
+    border-radius: 5px;
+    transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
+    color: #333333;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .link-item:hover {
+    border-color: #1EA7FD50;
+    transform: translate3d(0, -3px, 0);
+    box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
+  }
+
+  .link-item:active {
+    border-color: #1EA7FD;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .link-item strong {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 2px;
+  }
+  
+  .link-item img {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    flex: none;
+  }
+
+  .link-item span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .tip {
+    display: inline-block;
+    border-radius: 1em;
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: 700;
+    background: #E7FDD8;
+    color: #66BF3C;
+    padding: 4px 12px;
+    margin-right: 10px;
+    vertical-align: top;
+  }
+
+  .tip-wrapper {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .tip-wrapper code {
+    font-size: 12px;
+    display: inline-block;
+  }
+
+  
+`}</style>
+
+# Welcome to VR-Viz
+
+[![Sponsored](https://img.shields.io/badge/chilicorn-sponsored-brightgreen.svg?logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAA4AAAAPCAMAAADjyg5GAAABqlBMVEUAAAAzmTM3pEn%2FSTGhVSY4ZD43STdOXk5lSGAyhz41iz8xkz2HUCWFFhTFFRUzZDvbIB00Zzoyfj9zlHY0ZzmMfY0ydT0zjj92l3qjeR3dNSkoZp4ykEAzjT8ylUBlgj0yiT0ymECkwKjWqAyjuqcghpUykD%2BUQCKoQyAHb%2BgylkAyl0EynkEzmkA0mUA3mj86oUg7oUo8n0k%2FS%2Bw%2Fo0xBnE5BpU9Br0ZKo1ZLmFZOjEhesGljuzllqW50tH14aS14qm17mX9%2Bx4GAgUCEx02JySqOvpSXvI%2BYvp2orqmpzeGrQh%2Bsr6yssa2ttK6v0bKxMBy01bm4zLu5yry7yb29x77BzMPCxsLEzMXFxsXGx8fI3PLJ08vKysrKy8rL2s3MzczOH8LR0dHW19bX19fZ2dna2trc3Nzd3d3d3t3f39%2FgtZTg4ODi4uLj4%2BPlGxLl5eXm5ubnRzPn5%2Bfo6Ojp6enqfmzq6urr6%2Bvt7e3t7u3uDwvugwbu7u7v6Obv8fDz8%2FP09PT2igP29vb4%2BPj6y376%2Bu%2F7%2Bfv9%2Ff39%2Fv3%2BkAH%2FAwf%2FtwD%2F9wCyh1KfAAAAKXRSTlMABQ4VGykqLjVCTVNgdXuHj5Kaq62vt77ExNPX2%2Bju8vX6%2Bvr7%2FP7%2B%2FiiUMfUAAADTSURBVAjXBcFRTsIwHAfgX%2FtvOyjdYDUsRkFjTIwkPvjiOTyX9%2FAIJt7BF570BopEdHOOstHS%2BX0s439RGwnfuB5gSFOZAgDqjQOBivtGkCc7j%2B2e8XNzefWSu%2BsZUD1QfoTq0y6mZsUSvIkRoGYnHu6Yc63pDCjiSNE2kYLdCUAWVmK4zsxzO%2BQQFxNs5b479NHXopkbWX9U3PAwWAVSY%2FpZf1udQ7rfUpQ1CzurDPpwo16Ff2cMWjuFHX9qCV0Y0Ok4Jvh63IABUNnktl%2B6sgP%2BARIxSrT%2FMhLlAAAAAElFTkSuQmCC)](http://spiceprogram.org/oss-sponsorship) [![npm version](https://badge.fury.io/js/vr-viz.svg)](https://www.npmjs.com/package/vr-viz)
+
+VR-Viz provide a high-level react components to generate 3D visualization in webVR. It combines A-Frame with React (for DOM manipulation) and D3 (for data visualizations) to generate visualization in VR. It provides a JSON syntax for generating visualizations (the concept is inspired from Vega-Lite)
+
+**GitHub Repo: [https://github.com/mustafasaifee42/vr-viz](https://github.com/mustafasaifee42/vr-viz)**
+
+**NPM Package: [vr-viz](https://www.npmjs.com/package/vr-viz)**
+
+**Boilerplate for using VR-Viz can be found [here](https://github.com/mustafasaifee42/vr-viz-boilerplate)**
+
+# Getting Started
+
+## React
+
+To get started using vr-viz first add or install the module to your existing React project. Package link: [https://www.npmjs.com/package/vr-viz](https://www.npmjs.com/package/vr-viz)
+
+**Installation**
+
+```
+npm install --save vr-viz
+```
+
+or
+
+```
+yarn add vr-viz
+```
+
+## Usage
+
+```
+import VRViz from "vr-viz"
+```
+
+# Supported Visualizations
+
+**Graph or Charts**
+
+- [3D Bar Graph](./?path=/story/graphs-or-charts-bargraph-bargragh--bargragh)
+- [3D Stacked Bar Graph](./?path=/story/graphs-or-charts-bargraph-stacked-bargraph--stacked-bargraph)
+- [3D Lollipop Chart](./?path=/story/graphs-or-charts-lollipop-graph--lollipop-graph)
+- [3D Rectangle Chart](./?path=/story/graphs-or-charts-rectangle-chart--rectangle-chart)
+- [3D Scatter Plot / 3D Bubble Chat](./?path=/story/graphs-or-charts-scatter-plot-scatter-plot--scatter-plot)
+- [3D Connected Scatter Plot](./?path=/story/graphs-or-charts-connected-scatter-plot--connected-scatter-plot)
+- [3D Mesh Plot](./?path=/story/graphs-or-charts-mesh-plot--mesh-plot)
+- [Waterfall Plot](./?path=/story/graphs-or-charts-waterfall-plot-waterfall-plot--waterfall-plot)
+- [3D Time Series](./?path=/story/graphs-or-charts-time-series--time-series)
+- [3D Spiral Plot](./?path=/story/graphs-or-charts-spiral-plot--spiral-plot)
+
+**Maps**
+
+- [3D Prism Map](./?path=/story/maps-prism-map--prism-map)
+- [3D Map Bar Graph](./?path=/story/maps-map-with-bargraph-map-with-bargraph--map-with-bargraph)
+- [3D Map Stacked Bar Graph](./?path=/story/maps-map-with-bargraph-map-with-stacked-bargraph--mapwith-stacked-bargraph)
+- [MapTimeBars](./?path=/story/maps-map-with-timebars--map-with-timebars)
+- [IsolineMap](./?path=/story/maps-isoline-map--isoline-map)
+- [3D Flow Map](./?path=/story/maps-flow-maps-flow-map--flow-map)
+
+**Diagrams**
+
+- [3D Cross Sectional View](./?path=/story/diagrams-cross-sectional-view--cross-sectional-view)
+- [3D Contour Map](./?path=/story/diagrams-contour-map-contour-map--contour-map)
+- [3D Point Cloud](./?path=/story/diagrams-point-cloud--point-cloud)
+- [3D Force Directed Graph](./?path=/story/diagrams-network-graph-force-directed-graph--force-directed-graph)
+- [3D TreeMap](./?path=/story/diagrams-treemap--treemap)
+
+**Plots**
+
+- [3D Contour Plot or 3D Curve Plot](./?path=/story/plots-curve-plot-curve-plot--curve-plot)
+- [3D Parametric Curve Plot](./?path=/story/plots-curve-plot-parametric-curve-plot--parametric-curve-plot)
+- [3D Surface Plot](./?path=/story/plots-surface-plot-surface-plot--surface-plot)
+- [3D Parametric Surface Plot](./?path=/story/plots-surface-plot-parametric-surface-plot--parametric-surface-plot)
+
+# Reporting a Bug
+
+If you spot a bug, inconsistency, or typo, please open a [bug issue](https://github.com/mustafasaifee42/VR-Viz/issues/new). Better yet, submit a pull request to addresses it.
+
+# License
+
+Vr-Viz is lecensed under the GNU General Public License v3.0
+
+# Thank You
+
+VR-Viz is maintained and developed as a hobby project by [Mustafa Saifee](https://mustafasaifee.com/). I can be contacted via [email](mailto:saifee.mustafa@gmail.com) or via [twitter](https://twitter.com/mustafasaifee42).

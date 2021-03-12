@@ -137,6 +137,9 @@ export const WaterfallPlotOnlyLine = () => (
               color: "#b71c1c",
               width: 4,
             },
+            fill: {
+              opacity: 0.0001,
+            },
           },
         },
         axis: {
