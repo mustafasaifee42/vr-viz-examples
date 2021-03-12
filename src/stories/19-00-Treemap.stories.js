@@ -48,7 +48,7 @@ export const Treemap = () => (
           fileType: "json",
         },
         style: {
-          origin: [0, 0, 0],
+          origin: { x: 0, y: 0, z: 0 },
           dimensions: {
             width: 50,
             depth: 50,

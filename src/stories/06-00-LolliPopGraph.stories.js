@@ -54,7 +54,6 @@ export const LollipopGraph = () => (
           ],
         },
         style: {
-          origin: [0, 0, 0],
           dimensions: {
             width: 10,
             height: 10,

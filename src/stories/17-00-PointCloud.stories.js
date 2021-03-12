@@ -48,7 +48,7 @@ export const PointCloud = () => (
           fileType: "ply",
         },
         style: {
-          origin: [0, 0, 0],
+          origin: { x: 0, y: 0, z: 0 },
           objectScale: 0.01,
         },
         mark: {

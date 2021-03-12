@@ -54,7 +54,6 @@ export const StackedBargraph = () => (
           ],
         },
         style: {
-          origin: [0, 0, 0],
           dimensions: {
             width: 30,
             height: 20,

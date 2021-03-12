@@ -54,7 +54,6 @@ export const TimeSeries = () => (
           ],
         },
         style: {
-          origin: [0, 0, 0],
           dimensions: {
             width: 15,
             height: 10,

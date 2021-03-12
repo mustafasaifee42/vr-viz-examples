@@ -48,7 +48,7 @@ export const ForceDirectedGraph = () => (
           fileType: "json",
         },
         style: {
-          origin: [0, 0, 0],
+          origin: { x: 0, y: 0, z: 0 },
           scale: 0.2,
         },
         mark: {

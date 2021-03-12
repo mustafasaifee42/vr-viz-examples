@@ -53,7 +53,6 @@ export const BargraghWithCone = () => (
           ],
         },
         style: {
-          origin: [0, 0, 0],
           dimensions: {
             width: 20,
             height: 5,

@@ -48,7 +48,7 @@ export const ContourMap = () => (
           fileType: "text",
         },
         style: {
-          origin: [0, 0, 0],
+          origin: { x: 0, y: 0, z: 0 },
           objectScale: {
             ground: 0.1,
             height: 0.1,

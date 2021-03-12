@@ -55,9 +55,6 @@ export const FlowMap = () => (
             ["target_longitude", "number"],
           ],
         },
-        style: {
-          origin: [0, 0, 0],
-        },
         mark: {
           mapScale: 20,
           mapOrigin: [5, 5],

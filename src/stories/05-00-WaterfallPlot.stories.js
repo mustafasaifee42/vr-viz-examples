@@ -81,7 +81,6 @@ export const WaterfallPlot = () => (
           ],
         },
         style: {
-          origin: [0, 0, 0],
           dimensions: {
             width: 20,
             height: 10,

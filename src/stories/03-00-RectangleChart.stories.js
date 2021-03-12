@@ -54,7 +54,6 @@ export const RectangleChart = () => (
           ],
         },
         style: {
-          origin: [0, 0, 0],
           dimensions: {
             width: 25,
             height: 10,

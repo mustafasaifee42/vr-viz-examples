@@ -43,14 +43,6 @@ export const ScatterPlotWithProjections = () => (
     graph={[
       {
         type: "ScatterPlot",
-        style: {
-          origin: [10, 0, 0],
-          dimensions: {
-            width: 10,
-            height: 10,
-            depth: 10,
-          },
-        },
         data: {
           dataFile: "data/scatterPlot.csv",
           fileType: "csv",

@@ -44,7 +44,7 @@ export const CrossSectionalView = () => (
       {
         type: "CrossSectionView",
         style: {
-          position: [0, 3, 0],
+          origin: { x: 0, y: 3, z: 0 },
           scale: [25, 25, 25],
         },
         mark: {

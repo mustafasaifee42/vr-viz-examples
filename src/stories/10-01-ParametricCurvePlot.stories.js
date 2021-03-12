@@ -43,14 +43,7 @@ export const ParametricCurvePlot = () => (
     graph={[
       {
         type: "ParametricCurvePlot",
-        style: {
-          origin: [0, 0, 0],
-          dimensions: {
-            width: 10,
-            height: 10,
-            depth: 10,
-          },
-        },
+        rotationOnDrag: true,
         mark: {
           type: "line",
           position: {

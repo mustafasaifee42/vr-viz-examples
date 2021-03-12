@@ -45,9 +45,6 @@ export const IsolineMap = () => (
     graph={[
       {
         type: "IsolineMap",
-        style: {
-          origin: [0, 0, 0],
-        },
         data: {
           dataFile: "data/mapContourLines.csv",
           fileType: "csv",

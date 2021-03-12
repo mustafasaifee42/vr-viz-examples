@@ -43,14 +43,6 @@ export const SurfacePlotWithoutMesh = () => (
     graph={[
       {
         type: "SurfacePlot",
-        style: {
-          origin: [0, 0, 0],
-          dimensions: {
-            width: 10,
-            height: 10,
-            depth: 10,
-          },
-        },
         mark: {
           type: "plane",
           position: {

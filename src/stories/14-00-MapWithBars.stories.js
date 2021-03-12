@@ -54,9 +54,6 @@ export const MapWithBargraph = () => (
             ["value", "number"],
           ],
         },
-        style: {
-          origin: [0, 0, 0],
-        },
         mark: {
           mapScale: 2500,
           mapOrigin: [5344, 1783],

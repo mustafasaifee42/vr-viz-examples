@@ -81,7 +81,6 @@ export const MeshPlot = () => (
           ],
         },
         style: {
-          origin: [0, 0, 0],
           dimensions: {
             width: 30,
             height: 10,

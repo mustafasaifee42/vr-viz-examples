@@ -54,9 +54,6 @@ export const PrismMap = () => (
             ["colorValue", "number"],
           ],
         },
-        style: {
-          origin: [0, 0, 0],
-        },
         mark: {
           mapScale: 20,
           mapOrigin: [5, 5],
