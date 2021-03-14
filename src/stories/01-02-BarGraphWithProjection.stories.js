@@ -92,25 +92,6 @@ export const BargraghWithProjection = () => (
               opacity: 0.3,
             },
           },
-          mouseOver: {
-            focusedObject: {
-              opacity: 1,
-            },
-            nonFocusedObject: {
-              opacity: 0.2,
-            },
-            label: {
-              value: (d) => `x:${d.x}\nz:${d.z}\nheight:${d.height}`,
-              align: "center",
-              width: 0.5,
-              height: 0.15,
-              wrapCount: 100,
-              lineHeight: 50,
-              backgroundColor: "#fff",
-              backgroundOpacity: 0.9,
-              fontColor: "#333",
-            },
-          },
         },
         axis: {
           "x-axis": {
@@ -161,7 +142,7 @@ export const BargraghWithProjection = () => (
   />
 );
 
-BargraghWithHover.story = {
+BargraghWithProjection.story = {
   parameters: {
     notes: { markdown },
   },
